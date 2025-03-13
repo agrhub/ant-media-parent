@@ -32,3 +32,6 @@
 	path = PropertyGIS
 	url = https://github.com/agrhub/PropertyGIS.git
 	
+[submodule "RealGIS"]
+	path = RealGIS
+	url = D:\\Workspace\\Gits\\CamHub\\ant-media-parent\\RealGIS

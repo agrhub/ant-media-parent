@@ -21,5 +21,6 @@
 	<module>CamOS/webapp</module>
     <module>CloudyTV/webapp</module>
     <module>VidGen/webapp</module>
+    <module>RealGIS/webapp</module>
   </modules>
 </project>
