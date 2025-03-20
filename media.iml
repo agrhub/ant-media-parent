@@ -4,10 +4,9 @@
     <content url="file://$MODULE_DIR$" dumb="true">
       <excludeFolder url="file://$MODULE_DIR$/CamOS/vue" />
       <excludeFolder url="file://$MODULE_DIR$/CloudyTV/vue" />
-      <excludeFolder url="file://$MODULE_DIR$/ManagementConsole_AngularApp" />
-      <excludeFolder url="file://$MODULE_DIR$/VidGen/vue" />
-      <excludeFolder url="file://$MODULE_DIR$/VidGen_" />
       <excludeFolder url="file://$MODULE_DIR$/RealGIS/vue" />
+      <excludeFolder url="file://$MODULE_DIR$/VidGen/vue" />
+      <excludeFolder url="file://$MODULE_DIR$/ManagementConsole_AngularApp" />
     </content>
   </component>
 </module>

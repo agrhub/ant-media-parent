@@ -4,14 +4,14 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 	<parent>
 		<groupId>io.antmedia</groupId>
 		<artifactId>parent</artifactId>
-		<version>2.11.3</version>
+		<version>2.13.2</version>
 	</parent>
 	
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.agrhub.media</groupId>
 	<artifactId>parent</artifactId>
 	<name>ant-media-parent</name>
-	<version>2.11.3</version>
+	<version>2.13.2</version>
 	<packaging>pom</packaging>
     <description>AgrHub Media Parent Project</description>
     <url>https://github.com/agrhub/agrhub-media-parent</url>
@@ -64,7 +64,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		<rabbitmq.version>5.22.0</rabbitmq.version>
 		<bcprov.version>1.70</bcprov.version>
 		<opencv.version>4.9.0-0</opencv.version>
-		<opencv-platform-gpu.version>4.6.0-1.5.8</opencv-platform-gpu.version>
+		<opencv-platform-gpu.version>4.10.0-${javacpp.version}</opencv-platform-gpu.version>
 		<boofcv-core.version>1.1.7</boofcv-core.version>
 		<imgscalr.version>4.2</imgscalr.version>
 		<onvif.version>1.2.0-SNAPSHOT</onvif.version>
@@ -101,7 +101,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		<m3u8-parser.version>0.27</m3u8-parser.version>
 		<hutool-all.version>5.3.9</hutool-all.version>
 		<lombok.version>1.18.30</lombok.version>
-		<onnxruntime-platform.version>1.13.1-${javacpp.version}</onnxruntime-platform.version>
+		<onnxruntime-platform.version>1.20.0-${javacpp.version}</onnxruntime-platform.version>
 		<seeta-sdk-platform.version>1.2.2</seeta-sdk-platform.version>
 		<java-jwt.version>3.18.3</java-jwt.version>
 		<jwks-rsa.version>0.20.2</jwks-rsa.version>
@@ -109,7 +109,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		<javax.websocket-api.version>1.1</javax.websocket-api.version>
 		<powermock.version>2.0.9</powermock.version>
 		<swagger-jersey2-jaxrs.version>1.6.11</swagger-jersey2-jaxrs.version>
-		<srt.version>1.5.1-1.5.8</srt.version>
+		<srt.version>1.5.3-${javacpp.version}</srt.version>
 		<spring-boot-autoconfigure.version>3.3.1</spring-boot-autoconfigure.version>
 		<jaxb-api.version>2.3.1</jaxb-api.version>
 		<google-cloud.version>26.47.0</google-cloud.version>
