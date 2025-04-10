@@ -5,12 +5,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		<groupId>io.antmedia</groupId>
 		<artifactId>parent</artifactId>
 		<version>2.13.2</version>
+	<relativePath>../ant-media-server-parent/pom.xml</relativePath>
 	</parent>
 	
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.agrhub.media</groupId>
 	<artifactId>parent</artifactId>
-	<name>ant-media-parent</name>
+	<name>agrhub-media-parent</name>
 	<version>2.13.2</version>
 	<packaging>pom</packaging>
     <description>AgrHub Media Parent Project</description>
@@ -55,6 +56,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     	<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<libs.path>${project.basedir}/../libs</libs.path>
 		<skipTests>true</skipTests>
 		<openjfx.graphics.version>11.0.2</openjfx.graphics.version>
 		<servlet.version>2.5</servlet.version>
@@ -81,8 +83,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		<onnxruntime.version>1.19.0</onnxruntime.version>
 		<elasticsearch.version>7.14.0</elasticsearch.version>
 		<commons-pool2.version>2.5.0</commons-pool2.version>
-		<!--		<spring-mail.version>2.5.6</spring-mail.version>-->
-		<!--		<commons-email.version>1.6.0</commons-email.version>-->
 		<simple-mail.version>8.6.3</simple-mail.version>
 		<stablediffusion.version>1.0.1</stablediffusion.version>
 		<crawler4j.version>4.4.0</crawler4j.version>
@@ -139,6 +139,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <name>Sonatype Releases</name>
             <url>https://oss.sonatype.org/content/repositories/releases</url>
         </repository>
+    <repository>
+			<id>in-project</id>
+			<name>In Project Repo</name>
+			<url>file://${libs.path}</url>
+		</repository>
     </repositories>
     <dependencyManagement>
         <dependencies>
@@ -395,13 +400,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 				<groupId>io.antmedia.ipcamera.onvif</groupId>
 				<artifactId>ONVIF</artifactId>
 				<version>${onvif.version}</version>
-<!--				<scope>provided</scope>-->
 			</dependency>
 			<dependency>
 				<groupId>org.bytedeco</groupId>
 				<artifactId>ffmpeg</artifactId>
 				<version>${javacpp.ffmpeg.version}</version>
-<!--				<scope>provided</scope>-->
 			</dependency>
 			<dependency>
 				<groupId>org.apache.commons</groupId>
@@ -625,45 +628,63 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 				<artifactId>java-jwt</artifactId>
 				<version>${java-jwt.version}</version>
 			</dependency>
-
 			<dependency>
 				<groupId>org.redisson</groupId>
 				<artifactId>redisson</artifactId>
 				<version>${redisson.version}</version>
 			</dependency>
-
 			<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-graphics -->
 			<dependency>
 				<groupId>org.openjfx</groupId>
 				<artifactId>javafx-graphics</artifactId>
 				<version>${openjfx.graphics.version}</version>
 			</dependency>
-<!--			<dependency>-->
-<!--				<groupId>org.bytedeco</groupId>-->
-<!--				<artifactId>srt</artifactId>-->
-<!--				<version>${srt.version}</version>-->
-<!--				<scope>system</scope>-->
-<!--				<systemPath>${pom.basedir}/src/main/lib/srt-${srt.version}.jar</systemPath>-->
-<!--			</dependency>-->
 			<dependency>
 				<groupId>org.bytedeco</groupId>
 				<artifactId>ffmpeg-platform</artifactId>
 				<version>${javacpp.ffmpeg.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>io.antmedia</groupId>
+				<artifactId>ant-media-server</artifactId>
+				<version>${project.parent.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>io.antmedia.enterprise</groupId>
 				<artifactId>ant-media-enterprise</artifactId>
 				<version>${project.parent.version}</version>
+			<scope>system</scope>
+				<systemPath>${libs.path}/ant-media-enterprise-${project.parent.version}.jar</systemPath>
+			</dependency>
+			<dependency>
+				<groupId>org.bytedeco</groupId>
+				<artifactId>srt</artifactId>
+				<version>${srt.version}</version>
+				<scope>system</scope>
+				<systemPath>${libs.path}/srt-${srt.version}.jar</systemPath>
 			</dependency>
 			<dependency>
 				<groupId>com.seeta.sdk</groupId>
 				<artifactId>seeta-sdk-platform</artifactId>
 				<version>${seeta-sdk-platform.version}</version>
+			<scope>system</scope>
+				<systemPath>${libs.path}/seeta-sdk-platform-${seeta-sdk-platform.version}.jar</systemPath>
 			</dependency>
 			<dependency>
 				<groupId>org.imgscalr</groupId>
 				<artifactId>imgscalr-lib</artifactId>
 				<version>${imgscalr.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-imaging -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-imaging</artifactId>
+				<version>1.0.0-alpha5</version>
+			</dependency>
+			<dependency>
+				<groupId>net.coobird</groupId>
+				<artifactId>thumbnailator</artifactId>
+				<version>0.4.20</version>
 			</dependency>
 			<dependency>
 				<groupId>org.bytedeco</groupId>
@@ -883,13 +904,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 			<!--			<artifactId>commons-email</artifactId>-->
 			<!--			<version>${commons-email.version}</version>-->
 			<!--		</dependency>-->
-<!--			<dependency>-->
-<!--				<groupId>com.benjaminwan.rapidocr</groupId>-->
-<!--				<artifactId>RapidOcrNcnnJvm</artifactId>-->
-<!--				<version>1.0-SNAPSHOT</version>-->
-<!--				<scope>system</scope>-->
-<!--				<systemPath>${pom.basedir}/src/main/lib/RapidOcrNcnnJvm.jar</systemPath>-->
-<!--			</dependency>-->
+			<dependency>
+				<groupId>com.benjaminwan.rapidocr</groupId>
+				<artifactId>RapidOcrNcnnJvm</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				<scope>system</scope>
+				<systemPath>${libs.path}/RapidOcrNcnnJvm.jar</systemPath>
+			</dependency>
 			<!-- https://mvnrepository.com/artifact/org.simplejavamail/simple-java-mail -->
 			<dependency>
 				<groupId>org.simplejavamail</groupId>
