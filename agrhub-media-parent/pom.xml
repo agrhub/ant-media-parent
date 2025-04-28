@@ -102,7 +102,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		<hutool-all.version>5.3.9</hutool-all.version>
 		<lombok.version>1.18.30</lombok.version>
 		<onnxruntime-platform.version>1.20.0-${javacpp.version}</onnxruntime-platform.version>
-		<seeta-sdk-platform.version>1.2.2</seeta-sdk-platform.version>
+		<seeta-sdk-platform.version>1.2.3</seeta-sdk-platform.version>
 		<java-jwt.version>3.18.3</java-jwt.version>
 		<jwks-rsa.version>0.20.2</jwks-rsa.version>
 		<maven-model.version>3.8.4</maven-model.version>
