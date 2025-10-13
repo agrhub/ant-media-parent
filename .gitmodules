@@ -28,10 +28,6 @@
 [submodule "agrhub-media-core"]
 	path = agrhub-media-core
 	url = https://github.com/agrhub/agrhub-media-core.git
-[submodule "PropertyGIS"]
-	path = PropertyGIS
-	url = https://github.com/agrhub/PropertyGIS.git
-	
 [submodule "RealGIS"]
 	path = RealGIS
-	url = D:\\Workspace\\Gits\\CamHub\\ant-media-parent\\RealGIS
+	url = https://github.com/agrhub/RealGIS.git
