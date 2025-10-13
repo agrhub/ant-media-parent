@@ -135,12 +135,17 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <name>Sonatype Snapshots</name>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
+		<repository>
+			<id>sonatype-snapshots-2</id>
+			<name>Sonatype Snapshots 2</name>
+			<url>https://oss.sonatype.org/service/local/repositories/snapshots/content</url>
+		</repository>
         <repository>
             <id>sonatype-releases</id>
             <name>Sonatype Releases</name>
             <url>https://oss.sonatype.org/content/repositories/releases</url>
         </repository>
-    <repository>
+    	<repository>
 			<id>in-project</id>
 			<name>In Project Repo</name>
 			<url>file://${libs.path}</url>
@@ -654,7 +659,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 				<groupId>io.antmedia.enterprise</groupId>
 				<artifactId>ant-media-enterprise</artifactId>
 				<version>${project.parent.version}</version>
-			<scope>system</scope>
+				<scope>system</scope>
 				<systemPath>${libs.path}/ant-media-enterprise-${project.parent.version}.jar</systemPath>
 			</dependency>
 			<dependency>
