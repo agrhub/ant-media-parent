@@ -5,7 +5,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		<groupId>io.antmedia</groupId>
 		<artifactId>parent</artifactId>
 		<version>2.15.0</version>
-	<relativePath>../ant-media-server-parent/pom.xml</relativePath>
+		<relativePath>../ant-media-server-parent/pom.xml</relativePath>
 	</parent>
 	
 	<modelVersion>4.0.0</modelVersion>
