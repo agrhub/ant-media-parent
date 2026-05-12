@@ -4,7 +4,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 	<parent>
 		<groupId>io.antmedia</groupId>
 		<artifactId>parent</artifactId>
-		<version>2.15.0</version>
+		<version>3.0.3</version>
 		<relativePath>../ant-media-server-parent/pom.xml</relativePath>
 	</parent>
 	
@@ -12,7 +12,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 	<groupId>com.agrhub.media</groupId>
 	<artifactId>parent</artifactId>
 	<name>agrhub-media-parent</name>
-	<version>2.15.0</version>
+	<version>${project.parent.version}</version>
 	<packaging>pom</packaging>
     <description>AgrHub Media Parent Project</description>
     <url>https://github.com/agrhub/agrhub-media-parent</url>
@@ -109,7 +109,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		<javax.websocket-api.version>1.1</javax.websocket-api.version>
 		<powermock.version>2.0.9</powermock.version>
 		<swagger-jersey2-jaxrs.version>1.6.11</swagger-jersey2-jaxrs.version>
-		<srt.version>1.5.3-${javacpp.version}</srt.version>
 		<spring-boot-autoconfigure.version>3.3.1</spring-boot-autoconfigure.version>
 		<jaxb-api.version>2.3.1</jaxb-api.version>
 		<google-cloud.version>26.47.0</google-cloud.version>
@@ -117,6 +116,9 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		<aws-s3-v2-version>2.29.34</aws-s3-v2-version>
 		<jts-version>1.20.0</jts-version>
 		<geogson-version>1.4.31</geogson-version>
+		<srt.version>1.5.3-1.5.11</srt.version>
+		<openjfx.graphics.version>11.0.2</openjfx.graphics.version>
+		<servlet.version>2.5</servlet.version>
 		<enterprise.profile></enterprise.profile>
     </properties>
     <repositories>
@@ -653,7 +655,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 				<groupId>io.antmedia.enterprise</groupId>
 				<artifactId>ant-media-enterprise</artifactId>
 				<version>${project.parent.version}</version>
-			<scope>system</scope>
+				<scope>system</scope>
 				<systemPath>${libs.path}/ant-media-enterprise-${project.parent.version}.jar</systemPath>
 			</dependency>
 			<dependency>

@@ -1,33 +1,41 @@
-[submodule "Ant-Media-Server"]
-	path = Ant-Media-Server
-	url = https://github.com/ant-media/Ant-Media-Server.git
+; [submodule "Ant-Media-Server"]
+; 	path = Ant-Media-Server
+; 	url = https://github.com/ant-media/Ant-Media-Server.git
 [submodule "ant-media-server-parent"]
 	path = ant-media-server-parent
 	url = https://github.com/ant-media/ant-media-server-parent.git
-[submodule "StreamApp"]
-	path = StreamApp
-	url = https://github.com/ant-media/StreamApp.git
-[submodule "ManagementConsole_AngularApp"]
-	path = ManagementConsole_AngularApp
-	url = https://github.com/ant-media/ManagementConsole_AngularApp.git
+	branch = refs/tags/v3.0.3
+; [submodule "StreamApp"]
+; 	path = StreamApp
+; 	url = https://github.com/ant-media/StreamApp.git
+; [submodule "ManagementConsole_AngularApp"]
+; 	path = ManagementConsole_AngularApp
+; 	url = https://github.com/ant-media/ManagementConsole_AngularApp.git
 [submodule "CamOS"]
 	path = CamOS
 	url = https://github.com/agrhub/CamOS.git
+	branch = v3.0.3
 [submodule "seetaface6SDK"]
 	path = seetaface6SDK
 	url = https://github.com/dmtan90/seetaface6SDK.git
+	branch = master
 [submodule "ant-media-enterprise"]
 	path = ant-media-enterprise
 	url = https://github.com/agrhub/ant-media-enterprise.git
+	branch = v3.0.3
 [submodule "CloudyTV"]
 	path = CloudyTV
 	url = https://github.com/agrhub/CloudyTV.git
+	branch = v3.0.3
 [submodule "VidGen"]
 	path = VidGen
 	url = https://github.com/agrhub/VidGen.git
+	branch = v3.0.3
 [submodule "agrhub-media-core"]
 	path = agrhub-media-core
 	url = https://github.com/agrhub/agrhub-media-core.git
+	branch = v3.0.3
 [submodule "RealGIS"]
 	path = RealGIS
 	url = https://github.com/agrhub/RealGIS.git
+	branch = v3.0.3

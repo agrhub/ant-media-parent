@@ -2,12 +2,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.agrhub</groupId>
   <artifactId>parent</artifactId>
-  <version>2.15.0</version>
+  <version>3.0.3</version>
   <packaging>pom</packaging>
   <parent>
     <groupId>com.agrhub.media</groupId>
     <artifactId>parent</artifactId>
-    <version>2.15.0</version>
+    <version>3.0.3</version>
     <relativePath>./agrhub-media-parent/pom.xml</relativePath>
   </parent>
   <modules>
