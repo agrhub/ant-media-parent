@@ -119,6 +119,16 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		<srt.version>1.5.3-1.5.11</srt.version>
 		<openjfx.graphics.version>11.0.2</openjfx.graphics.version>
 		<servlet.version>2.5</servlet.version>
+		<paypal-server-sdk.version>2.0.0</paypal-server-sdk.version>
+		<stripe-java.version>24.21.0</stripe-java.version>
+		<jbcrypt.version>0.4</jbcrypt.version>
+		<jedis.version>4.3.1</jedis.version>
+		<spring-data-redis.version>4.0.3</spring-data-redis.version>
+		<commons-imaging.version>1.0.0-alpha5</commons-imaging.version>
+		<thumbnailator.version>0.4.20</thumbnailator.version>
+		<micrometer.version>1.12.2</micrometer.version>
+		<google-api-client.version>2.2.0</google-api-client.version>
+		<google-auth-library-oauth2-http.version>1.19.0</google-auth-library-oauth2-http.version>
 		<enterprise.profile></enterprise.profile>
     </properties>
     <repositories>
@@ -390,6 +400,16 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 			<dependency>
 				<groupId>software.amazon.awssdk</groupId>
 				<artifactId>apache-client</artifactId>
+				<version>${aws-s3-v2-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>software.amazon.awssdk</groupId>
+				<artifactId>regions</artifactId>
+				<version>${aws-s3-v2-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>software.amazon.awssdk</groupId>
+				<artifactId>auth</artifactId>
 				<version>${aws-s3-v2-version}</version>
 			</dependency>
 			<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
@@ -681,12 +701,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-imaging</artifactId>
-				<version>1.0.0-alpha5</version>
+				<version>${commons-imaging.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>net.coobird</groupId>
 				<artifactId>thumbnailator</artifactId>
-				<version>0.4.20</version>
+				<version>${thumbnailator.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.bytedeco</groupId>
@@ -1112,6 +1132,61 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 <!--				<artifactId>geogson-jts</artifactId>-->
 <!--				<version>${geogson-version}</version>-->
 <!--			</dependency>-->
+			<dependency>
+				<groupId>com.paypal.sdk</groupId>
+				<artifactId>paypal-server-sdk</artifactId>
+				<version>${paypal-server-sdk.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.stripe</groupId>
+				<artifactId>stripe-java</artifactId>
+				<version>${stripe-java.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mindrot</groupId>
+				<artifactId>jbcrypt</artifactId>
+				<version>${jbcrypt.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.microsoft.playwright</groupId>
+				<artifactId>playwright</artifactId>
+				<version>${playwright.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>redis.clients</groupId>
+				<artifactId>jedis</artifactId>
+				<version>${jedis.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-redis</artifactId>
+				<version>${spring-data-redis.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.apis</groupId>
+				<artifactId>google-api-services-drive</artifactId>
+				<version>v3-rev20230822-2.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.auth</groupId>
+				<artifactId>google-auth-library-oauth2-http</artifactId>
+				<version>${google-auth-library-oauth2-http.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.micrometer</groupId>
+				<artifactId>micrometer-registry-prometheus</artifactId>
+				<version>${micrometer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.micrometer</groupId>
+				<artifactId>micrometer-core</artifactId>
+				<version>${micrometer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.api-client</groupId>
+				<artifactId>google-api-client</artifactId>
+				<version>${google-api-client.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>

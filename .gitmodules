@@ -39,3 +39,7 @@
 	path = RealGIS
 	url = https://github.com/agrhub/RealGIS.git
 	branch = v3.0.3
+[submodule "AntStudio"]
+	path = AntStudio
+	url = https://github.com/agrhub/AntStudio.git
+; 	branch = v3.0.3

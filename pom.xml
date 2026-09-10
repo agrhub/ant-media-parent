@@ -18,9 +18,10 @@
     <module>agrhub-media-parent</module>
     <module>agrhub-media-core</module>
     <module>Ant-Media-Server</module>
-	<module>CamOS/webapp</module>
+    <module>CamOS/webapp</module>
     <module>CloudyTV/webapp</module>
     <module>VidGen/webapp</module>
     <module>RealGIS/webapp</module>
+    <module>AntStudio/webapp</module>
   </modules>
 </project>
