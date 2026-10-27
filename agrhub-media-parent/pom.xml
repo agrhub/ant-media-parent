@@ -69,7 +69,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		<opencv-platform-gpu.version>4.10.0-${javacpp.version}</opencv-platform-gpu.version>
 		<boofcv-core.version>1.1.7</boofcv-core.version>
 		<imgscalr.version>4.2</imgscalr.version>
-		<onvif.version>1.2.0-SNAPSHOT</onvif.version>
+		<onvif.version>1.2.0</onvif.version>
 		<redisson.version>3.17.4</redisson.version>
 		<jwt.version>3.18.3</jwt.version>
 		<jwks.version>0.20.2</jwks.version>
