@@ -43,3 +43,7 @@
 	path = AntStudio
 	url = https://github.com/agrhub/AntStudio.git
 ; 	branch = v3.0.3
+[submodule "agrhub-engine-core"]
+	path = agrhub-engine-core
+	url = https://github.com/agrhub/agrhub-engine-core.git
+	branch = v3.0.3
