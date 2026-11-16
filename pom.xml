@@ -1,19 +1,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>io.antmedia</groupId>
-  <artifactId>media</artifactId>
-  <version>2.6.4</version>
+  <groupId>com.agrhub</groupId>
+  <artifactId>parent</artifactId>
+  <version>3.0.3</version>
   <packaging>pom</packaging>
   <parent>
-    <groupId>io.antmedia</groupId>
+    <groupId>com.agrhub.media</groupId>
     <artifactId>parent</artifactId>
-    <version>2.6.4</version>
-    <relativePath>./ant-media-server-parent</relativePath>
+    <version>3.0.3</version>
+    <relativePath>./agrhub-media-parent/pom.xml</relativePath>
   </parent>
   <modules>
     <module>ant-media-server-parent</module>
     <module>StreamApp</module>
-    <module>CamOS/webapp</module>
+    <module>seetaface6SDK</module>
+    <module>ant-media-enterprise</module>
+    <module>agrhub-media-parent</module>
+    <module>agrhub-media-core</module>
     <module>Ant-Media-Server</module>
+    <module>CamOS/webapp</module>
+    <module>CloudyTV/webapp</module>
+    <module>VidGen/webapp</module>
+    <module>RealGIS/webapp</module>
+    <module>AntStudio/webapp</module>
   </modules>
 </project>

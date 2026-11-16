@@ -29,3 +29,14 @@ ant-media-enterprise-1.9.1.jar
 Ant-Media-Server/
 WebRTC-Android-SDK/
 decompile/
+dev/
+temps/
+VidGen_/
+ams_enterprise.zip
+ams_enterprise-2.10.0.zip
+ant-media-enterprise-2.8.2.jar
+history_cmd.txt
+*.iml
+Gravity/
+ams_enterprise_2.13.2.zip
+ams_enterprise_2.15.0.zip
