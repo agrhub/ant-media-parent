@@ -47,3 +47,7 @@
 	path = agrhub-engine-core
 	url = https://github.com/agrhub/agrhub-engine-core.git
 	branch = v3.0.3
+[submodule "agrhub-media-spi"]
+	path = agrhub-media-spi
+	url = https://github.com/agrhub/agrhub-media-spi.git
+	branch = v3.0.3
